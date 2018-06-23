@@ -1,0 +1,153 @@
+  html,body,p,div,ul,li{
+    list-style:none;
+    margin: 0;
+    padding: 0;
+  }
+  clearfix:after{
+    content: '';
+    display: block;
+    clear: both;
+  }
+  .container{
+    width: 1200px;
+    max-width: 1400px;
+    margin: 0 auto;
+    border: 1px solid red;
+  }
+
+  .carousel{
+    position: relative;
+    width: 1200px;
+    height: 500px;
+    overflow: hidden;
+  }
+  .carousel .img-ct{
+    position: absolute;
+    height: 500px;
+    width: 4800px;
+  }
+  .carousel .img-ct:after{
+    content: '';
+    display: block;
+    clear: both;
+  }
+  .carousel .img-ct>li{
+    float: left;
+  }
+  .carousel .img-ct img{
+    width: 1200px;
+    height: 500px;
+  }
+  .carousel .btn{
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 50%;
+    background-color: #333;
+    opacity: 0.6;
+    display: block;
+  }
+  .carousel .btn-pre{
+    left: 10px;
+  }
+  .carousel .btn-next{
+    right: 10px;
+  }
+
+  .carousel .bullet-ct{
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  .carousel .bullet{
+    display: inline-block;
+  }
+  .carousel .bullet:after{
+/*    content: '';
+    display: block;
+    clear: both;*/
+  }
+  .carousel .bullet>li{
+    /*float: left;*/
+    display: inline-block;
+    width: 20px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: #fff;
+    margin: 0 5px;
+  }
+  .carousel .bullet .active{
+    background-color: #666;
+  }
+/* 新闻 */
+.news-ct{
+  position: relative;
+}
+.news-ct>li{
+  position: absolute;
+  padding: 0,0,10px,0;
+  width: 280px;
+  margin: 10px;
+  border: 1px solid #dfdfdf;
+  background-color: #fff;
+  transition: all .6s;
+  box-sizing: border-box;
+}
+.news-ct>li img{
+  width: 260px;
+  margin: 10px;
+}
+.news-ct>li h4{
+  height: 25px;
+  margin: 0 12px;
+  border-bottom: 1px solid #dbdbdb;
+}
+.news-ct>li .summary{
+  font-size: 12px;
+  line-height: 1.8;
+  margin: 10px 15px 0;
+  color: #777371;
+}
+#load{
+  visibility: hidden;
+  height: 20px;
+}
+.hide{
+  display: none;
+}
+
+/* 返回顶部 */
+.gotop-cont{
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  right: 8px;
+  bottom: 40px;
+  background-color: red;
+  text-align: center;
+  line-height: 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+}
+.triangle{
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 8px 8px 8px;
+  border-color: transparent transparent #007bff transparent;
+}
+
+
+
+
